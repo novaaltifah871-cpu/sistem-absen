@@ -1,0 +1,255 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+/* CONTAINER */
+.container {
+    background: white;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* JUDUL */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* FORM */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102,126,234,0.3);
+}
+
+/* TOMBOL */
+.btn {
+    display: inline-block;
+    padding: 11px 16px;
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 3px;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.btn-secondary {
+    background: #95a5a6;
+}
+
+.btn-warning {
+    background: #f1c40f;
+    color: #333;
+}
+
+.btn-danger {
+    background: #e74c3c;
+    color: white;
+}
+
+/* REKAP */
+.rekap {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.card {
+    padding: 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.total {
+    background: #e8eaf6;
+    color: #3949ab;
+}
+
+.hadir {
+    background: #d4edda;
+    color: #155724;
+}
+
+.izin {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.sakit {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.alpa {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* PENCARIAN */
+.search-form {
+    display: flex;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.search-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+/* TABEL */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background: #667eea;
+    color: white;
+    padding: 13px 10px;
+}
+
+table td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: #444;
+}
+
+table tr:hover {
+    background: #f5f6ff;
+}
+
+/* BADGE STATUS */
+.badge {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.badge.hadir {
+    background: #d4edda;
+    color: #155724;
+}
+
+.badge.izin {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.badge.sakit {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.badge.alpa {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* AKSI */
+.aksi {
+    white-space: nowrap;
+}
+
+.aksi form {
+    display: inline-block;
+}
+
+/* ERROR */
+.error {
+    color: red;
+    background: #ffe5e5;
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    .rekap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-form {
+        flex-wrap: wrap;
+    }
+
+    .search-form input {
+        flex-basis: 100%;
+    }
+}
